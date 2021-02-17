@@ -1,12 +1,13 @@
-﻿@model List<string>
+﻿@using Festivalsite.Database;
+@model List<Product>
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1>Alle namen!</h1>
-    @foreach(string naam in Model)
+    <h1>Naam - Prijs - Beschikbaarheid</h1>
+    @foreach(Product p in Model)
     {
-      <p>@naam</p>
+      <p>@p.Naam - @p.Prijs - @p.Beschikbaarheid.</p>
     }
 </div>
