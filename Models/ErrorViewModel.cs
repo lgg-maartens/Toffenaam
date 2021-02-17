@@ -1,6 +1,6 @@
 using System;
 
-namespace Toffenaam.Models
+namespace Festivalsite.Models
 {
   public class ErrorViewModel
   {
